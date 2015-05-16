@@ -1,0 +1,26 @@
+{
+  "name": "zhaofeng.li",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zhaofengli/zhaofeng.li",
+  "authors": [
+    "Zhaofeng Li <hello@zhaofeng.li>"
+  ],
+  "description": "Zhaofeng Li's site",
+  "license": "proprietary",
+  "private": true,
+  "directory": "vendor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "github-fork-ribbon-css": "~0.1.1",
+    "skrollr": "~0.6.29"
+  }
+}
