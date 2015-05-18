@@ -10,7 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	background: rgb( 0, 192, 255 );
+	background: #000000;
 	font-family: "RobotoDraft", "Roboto", sans-serif;
 	color: #fff;
 }
@@ -25,7 +25,7 @@ section {
 	display: table;
 	width: 100%;
 	height: 105vh;
-	padding: 20px 0 20px 0;
+	padding: 10px 0 20px 0;
 }
 
 section .sectionContent {
@@ -64,8 +64,8 @@ a {
 }
 
 #logo {
+	min-width: 430px;
 	width: 40%;
-	min-width: 500px;
 }
 
 @media screen and (max-width: 499px) {
