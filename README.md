@@ -1,4 +1,4 @@
-# gzres.me
+# cantonres.com
 The homepage of Canton Resistance.
 
 ## Building

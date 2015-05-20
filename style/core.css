@@ -1,22 +1,18 @@
 /*
 	Main CSS file
 	
-	Relased into public domain.
+	Except for certain parts, this file, excluding any linked files, is released into public domain.
 */
 
 @import url( "fonts/Roboto/font.css" );
 
 body {
 	padding: 0;
-	margin: 0;
-	text-align: center;
-	background: #000000;
-	font-family: "RobotoDraft", "Roboto", sans-serif;
-	color: #fff;
+	background: #0b0c0d;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
-	color: #e8eaf6;
 	font-style: italic;
 	text-shadow: 0px -1px 0px #283593;
 }
@@ -49,124 +45,59 @@ a {
 	color: inherit;
 }
 
-#header {
-	margin-top: 30px;
-	/*
-	background-color: #3f51b5;
-	background-image: linear-gradient( to bottom, #3f51b5 0, #5c6bc0 5px, #3949ab 100% );
-	*/
-	color: #fff;
+#contentBorder {
+	padding: 0;
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 10px 10px 10px;
+	border: 1px solid #4a9299;
 }
 
-#header h1 {
+#content {
+	margin: 0 auto;
+	padding: 30% 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-family: "RobotoDraft", "Roboto", sans-serif;
+	color: #cca844;
+
+}
+
+#content h1 {
 	color: transparent;
 	display: none;
 }
 
 #logo {
-	min-width: 430px;
-	width: 40%;
-}
-
-@media screen and (max-width: 499px) {
-	#logo {
-		min-width: 95%;
-	}
-}
-
-#tagline {
-	display: block;
-	font-weight: bold;
-	margin: 10px;
-	color: #e8eaf6;
-	font-size: 30px;
-	text-shadow: 0px -1px 0px #283593;
-}
-
-#links {
-	display: inline-block;
-	width: auto;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 30px;
-}
-
-#links li, .round-button {
-	display: inline-block;
-	width: 55px;
-	height: 55px;
-	background-color: transparent;
-	background-size: cover;
-}
-
-#links li:hover {
-	width: auto;
-	min-width: 55px;
-}
-
-#links li .caption, .round-button .caption {
-	display: none;
-}
-
-#aboutme {
-	/*background: #ff0000;*/
-}
-
-.button-github {
-	background-image: url( "../images/octocat.png" );
-}
-
-.button-wikipedia {
-	background-image: url( "../images/wikipedia.png" );
-}
-
-.button-web {
-	background-image: url( "../images/email.png" );
-}
-
-.down-arrow {
-	display: block;
-	color: transparent;
-	font-size: 64px;
-	text-shadow: 0 -15px #fff, 0 0 #ddd;
-}
-
-.up-arrow {
-	color: transparent;
-	font-size: 64px;
-	text-shadow: 0 15px #fff, 0 0 #ddd;
-}
-
-.scroll-button {
-	cursor: pointer;
-}
-
-.github-fork-ribbon {
-	background-color: #333 !important;
-	margin-left: -200px;
+	height: auto;
+	max-width: 60%;
 }
 
 /*
-Copyright (c) 2015 by Chris Harrison (http://codepen.io/cdharrison/pen/HxKnC)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	Copyright (c) 2015 by Chris Harrison (http://codepen.io/cdharrison/pen/HxKnC)
+	
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+	
+	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 .ingress-button {
-	background: darkcyan;
+	display: block;
+	background: #004646;
 	border: 1px solid cyan;
 	color: #fff;
 	display: inline-block;
-	font: normal 13px/.7 'Coda';
 	margin: 5px;
 	padding: 10px 50px;
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
 .ingress-button:before {
 	border-left: 4px solid transparent;
 	border-bottom: 4px solid darkcyan;
@@ -197,4 +128,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .ingress-button:hover:before {
 	border-bottom-color: #005858;
+}
+
+/* Copyright 2012 Google Inc. All rights reserved. */
+.separator {
+	display: table;
+	position: absolute;
+	height: 27px;
+	table-layout: fixed;
+	width: 100%;
+	padding: 0;
+	margin-left: -7px;
+}
+
+.separator_left_arm {
+	background: repeat-x url(../images/border_top.png);
+	display: table-cell;
+	z-index: 1;
+}
+
+.separator_center {
+	background: no-repeat url(../images/border_diag.png);
+	display: table-cell;
+	width: 29px;
+}
+
+.separator_right_arm {
+	background: repeat-x url(../images/border_bottom.png);
+	display: table-cell;
 }

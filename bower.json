@@ -1,11 +1,11 @@
 {
-  "name": "zhaofeng.li",
+  "name": "cantonres.com",
   "version": "0.0.0",
-  "homepage": "https://github.com/zhaofengli/zhaofeng.li",
+  "homepage": "https://github.com/cantonres/cantonres.github.io",
   "authors": [
     "Zhaofeng Li <hello@zhaofeng.li>"
   ],
-  "description": "Zhaofeng Li's site",
+  "description": "The homepage of Canton Resistance",
   "license": "proprietary",
   "private": true,
   "directory": "vendor",
@@ -17,10 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
     "html5shiv": "~3.7.2",
-    "respond": "~1.4.2",
-    "github-fork-ribbon-css": "~0.1.1",
-    "skrollr": "~0.6.29"
+    "respond": "~1.4.2"
   }
 }
