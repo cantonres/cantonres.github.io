@@ -90,16 +90,11 @@ html, body{
 
 .wrapper .container .content{
     text-align: center;
-    /*margin: 50px auto 0;*/
-    width: 100%;
-    height: 450px;
-    padding: 30px;
+    height: 400px;
 
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-
-    
+    top: 0; left: 0; bottom: 0; right: 0;   
 }
 
 
@@ -178,29 +173,29 @@ html, body{
 
 /* ---------- responsive ---------- */
 
-@media (max-height: 480px) {
+@media (max-height: 479px) {
     .wrapper .container{
+        overflow-x: hidden;
         overflow-y: scroll;
     }
 
     .wrapper .container .content{
-        height: 360px;
         position: static;
-        padding: 20px;
-        margin: 0;
+        margin: 20px auto;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 600px){
+
+    .wrapper .container .content{
+        height: 40%;
+    }
 
     .wrapper .container .content .logo{
-        padding: 0;
+
     }
 
     .wrapper .container .content .slogan{
         font-size: 18px;
     }
 }
-
-
-
