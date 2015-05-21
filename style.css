@@ -86,22 +86,20 @@ html, body{
     width: 100%;
     height: 100%;
     border: 1px solid #468990;
+    position: relative;
+    display: inline-block;
 }
 
 .wrapper .container .content{
     text-align: center;
-    height: 400px;
+    width: 500px;
+    height: 380px;
+    padding: 20px;
 
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;   
 }
-
-
-
-
-
-
 
 
 
@@ -173,7 +171,7 @@ html, body{
 
 /* ---------- responsive ---------- */
 
-@media (max-height: 479px) {
+@media (max-height: 440px) {
     .wrapper .container{
         overflow-x: hidden;
         overflow-y: scroll;
@@ -181,18 +179,18 @@ html, body{
 
     .wrapper .container .content{
         position: static;
-        margin: 20px auto;
     }
 }
 
-@media (max-width: 600px){
+
+@media (max-width: 520px){
 
     .wrapper .container .content{
-        height: 40%;
+        width: 100%;
     }
 
     .wrapper .container .content .logo{
-
+        padding: 20px;
     }
 
     .wrapper .container .content .slogan{
