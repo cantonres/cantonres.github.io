@@ -1,6 +1,6 @@
 /*
 	Roboto, by Christian Robertson
-	
+
 	Licensed under Apache License, version 2.0
 	http://www.apache.org/licenses/LICENSE-2.0.html
 */
@@ -8,13 +8,12 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	src: local( "Roboto Regular" ), local( "Roboto-Regular" ), url( "Roboto-Regular.ttf" );
+	src: local( "Roboto Regular" ), local( "Roboto-Regular" ), url( "Roboto-Regular.woff" );
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
-	src: local( "Roboto Bold" ), local( "Roboto-Bold" ), url( "Roboto-Bold.ttf" );
+	src: local( "Roboto Bold" ), local( "Roboto-Bold" ), url( "Roboto-Bold.woff" );
 }
-
