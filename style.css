@@ -1,0 +1,206 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0B0C0D;
+    overflow: hidden;
+    font-family: 'roboto', helvetica, arial;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+            transition: all 0.25s ease-out;
+       -moz-transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* ---------- separator ---------- */
+
+
+.separator{
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    background-color: #0B0C0D;
+}
+
+.separator > div{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+
+.separator .left{
+    border-top: 1px solid #468990;
+}
+
+.separator .right{
+    border-bottom: 1px solid #468990;
+}
+
+.separator .center{
+    background-color: #0B0C0D;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    border-left: 2px solid #468990;
+    border-bottom: 1px solid #468990;
+
+    -webkit-transform: skew(50deg);
+       -moz-transform: skew(50deg);
+        -ms-transform: skew(50deg);
+         -o-transform: skew(50deg);
+            transform: skew(50deg);
+}
+
+
+
+
+
+/* ---------- structure ---------- */
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.wrapper .container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #468990;
+}
+
+.wrapper .container .content{
+    text-align: center;
+    /*margin: 50px auto 0;*/
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* ---------- content ---------- */
+
+.wrapper .container .content .logo{
+    padding: 0 50px;
+    width: 100%;
+    max-width: 542px;
+}
+
+.wrapper .container .content .slogan{
+    font-size: 24px;
+    font-weight: normal;
+    color: #2FCFC3;
+    margin: 20px;
+}
+
+
+.ingress-button:hover {
+  background: #005858;
+  color: #FFF;
+}
+.ingress-button {
+  display: block;
+  background: #004646;
+  border: 1px solid #0FF;
+  color: #FFF;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 50px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ingress-button:hover:before {
+  border-bottom-color: #005858;
+}
+
+.ingress-button:before {
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid #008B8B;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  z-index: 5;
+}
+
+.ingress-button:after {
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-bottom: 5px solid #0FF;
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  z-index: 4;
+}
+
+
+
+
+/* ---------- responsive ---------- */
+
+@media (max-height: 480px) {
+    .wrapper .container{
+        overflow-y: scroll;
+    }
+
+    .wrapper .container .content{
+        height: 360px;
+        position: static;
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px){
+
+    .wrapper .container .content .logo{
+        padding: 0;
+    }
+
+    .wrapper .container .content .slogan{
+        font-size: 18px;
+    }
+}
+
+
+
