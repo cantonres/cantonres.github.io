@@ -1,10 +1,37 @@
 html, body{
 	width: 100%;
-	height: 100%;
 	background-color: #0B0C0D;
-	overflow: hidden;
+	color: #ffffff;
 	font-family: 'roboto', helvetica, arial;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2FCFC3;
+	margin-bottom: 10px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	margin-top: 10px;
+}
+
+hr {
+	height: 2px;
+	color: #2fcfc3;
+	background: #2fcfc3;
+	border: 0;
+	margin: 5px 0 10px 0;
+}
+
+section {
+	min-height: 100vh;
+	padding-top: 20px;
+}
+
+
 
 *{
 	margin: 0;
@@ -63,10 +90,12 @@ html, body{
 /* ---------- structure ---------- */
 
 .wrapper{
+	position: absolute;
+	display: block;
 	width: 100%;
 	height: 100%;
 	padding: 10px;
-	padding-top: 50px;
+	margin-top: 50px;
 }
 
 .wrapper .container {
@@ -74,7 +103,7 @@ html, body{
 	height: 100%;
 	border: 1px solid #468990;
 	position: relative;
-	display: inline-block;
+	display: block;
 }
 
 .wrapper .container .content{
@@ -102,7 +131,6 @@ html, body{
 	color: #2FCFC3;
 	margin: 20px;
 }
-
 
 .ingress-button:hover {
 	background: #005858;
