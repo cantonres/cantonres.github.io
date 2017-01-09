@@ -88,6 +88,16 @@ html, body{
 	top: 0; left: 0; bottom: 0; right: 0;   
 }
 
+.wrapper .container .footer{
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	color:#2FCFC3 ;
+	text-align: center;
+	padding:5px;
+	font-size:smaller;
+}
+
 /* ---------- content ---------- */
 
 .wrapper .container .content .logo{
