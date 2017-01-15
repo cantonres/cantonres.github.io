@@ -90,11 +90,11 @@ html, body{
 
 .wrapper .container .footer{
 	position:absolute;
-	bottom:10px;
+	bottom:5px;
 	width:100%;
 	color:#2FCFC3 ;
 	text-align: center;
-	padding:5px;
+	padding:0px;
 	font-size:xx-small;
 }
 
