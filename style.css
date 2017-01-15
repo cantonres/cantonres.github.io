@@ -190,9 +190,17 @@ html, body{
 	}
 }
 
-/* ---------- link ---------- 
-/*
-a:link {text-decoration: none;color: #2FCFC3}
-a:active {text-decoration:blink}
-a:visited {text-decoration: none;color: #0E403C} 
-a:hover {text-decoration:underline;color: #2FCFC3} */
+/* ---------- link ---------- */
+
+
+#recordlink a:link, 
+#recordlink a:visited { 
+color:#0E403C; 
+text-decoration:none; 
+} 
+
+#recordlink a:hover, 
+#recordlink a:active { 
+color:#2FCFC3; 
+text-decoration:underline; 
+} 
