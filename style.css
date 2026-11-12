@@ -119,14 +119,15 @@ html, body{
 	color: #FFF;
 }
 .ingress-button {
-	display: block;
 	background: #004646;
 	border: 1px solid #0FF;
 	color: #FFF;
 	display: inline-block;
+	width: 160px;
 	margin: 5px;
-	padding: 10px 50px;
+	padding: 10px 0;
 	position: relative;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -175,10 +176,15 @@ html, body{
 }
 
 
-@media (max-width: 520px){
+@media (max-width: 760px){
 
 	.wrapper .container .content{
 		width: 100%;
+	}
+
+	.ingress-button{
+		display: block;
+		margin: 5px auto;
 	}
 
 	.wrapper .container .content .logo{
